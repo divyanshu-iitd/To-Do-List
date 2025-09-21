@@ -1,0 +1,176 @@
+/* ===== Body & Global Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+  color: white;
+}
+
+/* ===== Main Container ===== */
+.container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Background Upload ===== */
+.bg-upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center file input */
+  margin-bottom: 20px;
+}
+
+.bg-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ===== Heading ===== */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* ===== Input Section ===== */
+.input-section {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+.search-input,
+.file-input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  outline: none;
+}
+
+/* ===== Select & Buttons ===== */
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ===== Filters ===== */
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  margin: 0 5px;
+  background: #6c757d;
+}
+
+.filters button:hover {
+  background: #495057;
+}
+
+/* ===== Task List ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.task {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 360px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+li.task span {
+  flex-grow: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+li.task.completed span {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+/* ===== Priority Colors ===== */
+li.task.high {
+  border-left: 6px solid #e63946; /* Red for High */
+}
+
+li.task.medium {
+  border-left: 6px solid #f4a261; /* Orange for Medium */
+}
+
+li.task.low {
+  border-left: 6px solid #2a9d8f; /* Green for Low */
+}
+
+.priority {
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* ===== Delete Button ===== */
+li.task button {
+  background: #dc3545;
+  margin-left: 10px;
+}
+
+li.task button:hover {
+  background: #a71d2a;
+}
+
+/* ===== Progress Bar ===== */
+.progress-bar {
+  height: 15px;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  width: 360px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+.video-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+li.task iframe {
+  border-radius: 8px;
+}
